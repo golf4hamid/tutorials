@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+form {
+    background: #5fff7d; width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
+#form_header {
+    text-align: center; padding: 10px;
+}
+form input {
+    margin-bottom: 1%;
+}
+form #title, #link1 {
+    width: 45%; text-align: center;
+    padding: 10px; display: block;
+    margin: 1% 2%; display: inline-block;
+}
+form label {
+    width: 20%; display: inline-block; text-align: center;
+    padding: 15px;
+}
+form select {
+    width: 25%; padding: 10px; text-align: center;
+    vertical-align: top;
+}
+form textarea {
+    width: 60%; margin-top: 10px;
+    max-height: 155px; height: 100px;
+}
+form input[type=submit] {
+    display: block;
+    width: 170px;
+    margin: 1% auto;
+    padding: 10px;
+}

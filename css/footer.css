@@ -1,0 +1,84 @@
+* {
+	box-sizing: border-box;
+	margin: 0; padding: 0; 
+}
+footer {
+	display: flex;
+	height: 80px;
+	position: static;
+	bottom: 0;
+	width: 100%;
+	box-shadow: 2px 0px 5px;
+}
+footer > span {
+	display: block;
+	border: 1px dotted #999;
+	flex-grow: 1;
+	text-align: center;
+	padding-top: 25px;
+}
+/*--------------------- For Medium Screen  -------------------------------*/
+@media (min-width: 720px) and (max-width: 978px) {
+	footer {
+		color: red;
+	}
+	footer > .adress {
+		flex-grow: 0.3;
+		flex-basis: 40%;
+	}
+	footer > .copyright {
+		flex-grow: 0.3;
+		flex-basis: 20%;
+	}
+	footer > .rules {
+		flex-grow: 0.3;
+		flex-basis: 20%;
+	}
+	footer > .contact_us {
+		flex-grow: 0.3;
+		flex-basis: 20%;
+	}
+}
+/*--------------------- For Small Screen  -------------------------------*/
+@media (min-width: 480px) and (max-width: 719px) {
+	footer {
+		color: green;
+		height: 110px;
+	}
+	footer > .adress {
+		flex-grow: 1;
+		flex-basis: 40%;
+	}
+	footer > .copyright {
+		flex-grow: 1;
+		flex-basis: 20%;
+	}
+	footer > .rules {
+		flex-grow: 1;
+		flex-basis: 20%;
+	}
+	footer > .contact_us {
+		display: none;
+	}
+}
+/*--------------------- For Extra Small Screen  -------------------------------*/
+@media (max-width: 479px) {
+	footer {
+		color: blue;
+		height: 120px;
+		font-size: 13px;
+	}
+	footer > .adress {
+		flex-basis: 45%;
+	}
+	footer > .copyright {
+		flex-grow: 1;
+		flex-basis: 20%;
+	}
+	footer > .rules {
+		flex-basis: 20%;
+	}
+	footer > .contact_us {
+		display: none;
+	}
+}
